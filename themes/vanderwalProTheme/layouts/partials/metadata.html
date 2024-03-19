@@ -1,0 +1,17 @@
+<small class="text-muted">
+{{ $dateTime := .PublishDate.Format "2006-01-02T03:08:00Z" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "02-01-2006 03:08" }}
+
+<b>Gepubliceerd op:</b> <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+{{ with .Params.tags }}
+-
+{{ range . }}
+{{ $href := print (absURL "tags/") (urlize .) }}
+<a href="{{ $href }}">#{{ . }}</a>
+{{ end }}
+{{ end }}
+{{ if .Params.author }}
+-
+{{ .Params.author }}
+{{ end }}
+</small>

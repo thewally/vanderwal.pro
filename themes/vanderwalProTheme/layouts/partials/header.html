@@ -1,0 +1,17 @@
+<div class="px-3 py-2 text-bg-white border-bottom">
+    <div class="container">
+      <div class="mx-auto flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+          {{ range .Site.Menus.main }}
+          <li>
+            <a href="{{ .URL }}" class="nav-link text-secondary">
+            {{ $text := print .Name | safeHTML }}
+            {{ $text }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

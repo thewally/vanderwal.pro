@@ -1,0 +1,4 @@
+baseURL = 'https://vanderwal.pro/'
+languageCode = 'en-us'
+title = 'vanderwal.pro'
+theme = 'vanderwalProTheme'

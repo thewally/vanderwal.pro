@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="card mx-auto w-50 border-0">
+    <div class="card-header">
+        {{ .Title }}
+    </div>
+    <div class="card-body">
+        <p>{{ .Content }}</p>
+        {{ partial "metadata.html" . }}
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="card mx-auto w-50 border-0">
+<h1 class="card-title">{{ .Title }}</h1>
+</div> 
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <div class="card mx-auto w-50 border-0">
+        <div class="card-header">
+            {{ .Title }}
+            <p class="card-text">{{ partial "metadata.html" . }}</p>
+        </div>
+        <div class="card-body">
+            <p>{{ .Summary }}</p>
+            <p><a class="btn btn-primary" href="{{ .RelPermalink }}">Meer</a></p>
+
+        </div>
+    </div>
+    {{ end }}
+{{ end }}
