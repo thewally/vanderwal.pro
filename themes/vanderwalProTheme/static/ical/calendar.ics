@@ -1,0 +1,24 @@
+ BEGIN:VCALENDAR
+ PRODID:-//vanderwal.pro//Version 1.0//EN
+ VERSION:2.0
+ BEGIN:VEVENT
+ DTSTAMP:20240321T000000Z
+ UID:uid1@example.com
+ ORGANIZER:CN=Arjen van der Wal:mailto:arjen.vanderwalh@gmail.com
+ DTSTART:20240525T000000Z
+ DTEND:20240525T235959Z
+ STATUS:CONFIRMED
+ SUMMARY:Jippie verjaardag Arjen
+ DESCRIPTION:Gaan we lekker vieren
+ END:VEVENT
+ BEGIN:VEVENT
+ DTSTAMP:20240321T000000Z
+ UID:uid1@example.com
+ ORGANIZER:CN=Arjen van der Wal:mailto:arjen.vanderwalh@gmail.com
+ DTSTART:20241130T000000Z
+ DTEND:20241130T235959Z
+ STATUS:CONFIRMED
+ SUMMARY:Jippie verjaardag Sandra
+ DESCRIPTION:Gaan we lekker vieren
+ END:VEVENT
+ END:VCALENDAR
